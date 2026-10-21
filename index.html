@@ -2,7 +2,7 @@
 <html lang="fr">
 
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="index, follow">
   <title>Quiniou Diraison Gurvan – Portfolio</title>
@@ -11,8 +11,8 @@
   <link rel="stylesheet" href="style.css">
   <link
     href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=DM+Sans:wght@300;400;500;600&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <script defer src="script.js"></script>
 </head>
 
@@ -24,7 +24,7 @@
 
   <aside class="sidebar">
     <div class="sidebar-profile">
-      <div class="avatar"><img class="avatar" src="images/img.jpeg" alt="Photo de Profil"></div>
+      <div class="avatar"><img class="avatar" src="images/img.jpeg"></div>
       <h2 class="sidebar-name">Gurvan Quiniou Diraison</h2>
       <p class="sidebar-bio">Étudiant en BTS Systèmes Informatiques aux Organisations (option SISR)</p>
     </div>
@@ -35,6 +35,9 @@
       </a>
       <a href="#competences" class="nav-item" data-section="competences">
         <i class="fas fa-code"></i> Compétences
+      </a>
+      <a href="#projets" class="nav-item" data-section="projets">
+        <i class="fas fa-diagram-project"></i> Projets
       </a>
       <a href="#experience" class="nav-item" data-section="experience">
         <i class="fas fa-briefcase"></i> Expérience
@@ -55,7 +58,8 @@
         <p class="hero-desc">Au lycée Saint-Louis de Châteaulin,<br>je souhaite poursuivre mes études dans
           l'administration systèmes et réseaux.</p>
         <div class="hero-btns">
-          <a href="images/Quiniou_Diraison_Gurvan_CV.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-dark"><i class="fas fa-envelope"></i>Voir
+          <a href="images/Quiniou_Diraison_Gurvan_CV.pdf" target="_blank" rel="noopener noreferrer"
+            class="btn btn-dark"><i class="fas fa-envelope"></i>Voir
             mon CV</a>
           <a href="#experience" class="btn btn-outline">Expérience</a>
         </div>
@@ -84,7 +88,7 @@
             <span class="timeline-company">Lycée Saint Louis Chateaulin</span>
             <p class="timeline-desc">Solutions d'Infrastructure, Systèmes et Réseaux - Administration systèmes, réseaux
               et cybersécurité.</p>
-            <p class="timeline-desc">Première année.</p>
+            <p class="timeline-desc">Deuxième année.</p>
           </div>
         </div>
 
@@ -146,10 +150,113 @@
       </div>
     </section>
 
+    <section id="projets" class="section">
+      <div class="section-header">
+        <h2>Mes projets</h2>
+      </div>  
+      <div class="projects-grid">
+
+        <div class="project-card">
+          <div class="project-img">
+            <i class="fas fa-chart-line"></i>
+          </div>
+          <div class="project-body">
+            <h3>Supervision Web - Debian 13</h3>
+            <p>Développement d'un site web de supervision avec Apache2 & PHP, alimenté par scripts Python, PowerShell & SNMP puis intéroggé et mis a jour en base de données</p>
+            <div class="tags">
+              <span class="tag">MariaDB</span>
+              <span class="tag">SNMP</span>
+              <span class="tag">Python</span>
+            </div>
+            <div class="project-actions">
+                <a href="https://github.com/quiniou-g/supervision" target="_blank" class="btn btn-outline btn-sm"><i
+                  class="fab fa-github"></i> Code</a>
+              <a href="./projets/Doc_Supervision_Optimise.pdf" class="btn btn-dark btn-sm"><i class="fas fa-external-link-alt"></i> Démo</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-img">
+            <i class="fas fa-server"></i>
+          </div>
+          <div class="project-body">
+            <h3>Serveur WDS - Windows Serveur</h3>
+            <p>Mise en place d'un environnement de déploiement automatisé pour l'entreprise Breizelec avec une VM Windows Server 2019 ainsi que Windows Deployment Service</p>
+            <div class="tags">
+              <span class="tag">WS 2019</span>
+              <span class="tag">WDS</span>
+              <span class="tag">Réseaux</span>
+            </div>
+            <div class="project-actions">
+              <a href="./projets/Doc_Serveur_MDT.pdf" class="btn btn-dark btn-sm"><i class="fas fa-external-link-alt"></i> Démo</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-img">
+            <i class="fas fa-code"></i>
+          </div>
+          <div class="project-body">
+            <h3>Ce Portfolio</h3>
+            <p>Site personnel développé en HTML / CSS et hébergé sur GitHub Pages pour présenter mon parcours, mes
+              compétences et mes expériences.</p>
+            <div class="tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">GitHub Pages</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://github.com/quiniou-g/Portfolio" target="_blank" class="btn btn-outline btn-sm"><i
+                  class="fab fa-github"></i> Code</a>
+              <a href="https://gurvanqd.me" class="btn btn-dark btn-sm"><i
+                  class="fas fa-external-link-alt"></i> Démo</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
     <section id="experience" class="section">
       <div class="section-header">
         <h2>Mes expériences</h2><br>
         <div class="exp-grid">
+          <div class="exp-item reveal delay-1">
+            <div class="exp-logo-container">
+              <img src="images/breizelec.png" alt="Breizelec" class="exp-img" width="100" height="100" loading="lazy">
+            </div>
+            <div class="exp-content">
+              <div class="exp-header">
+                <h3>Breizelec - SI</h3>
+                <span class="badge">INTERIM</span>
+              </div>
+              <p class="company">2026 - Breizelec - Châteaulin</p>
+              <ul class="desc-list">
+                <li>Développement d'un site web de supervision</li>
+                <li>Restauration d'un NAS en Raid 5</li>
+                <li>mettre a jour</li>
+              </ul>
+            </div>
+          </div>
+          <div class="exp-item reveal delay-1">
+            <div class="exp-logo-container">
+              <img src="images/breizelec.png" alt="Breizelec" class="exp-img" width="100" height="100" loading="lazy">
+            </div>
+            <div class="exp-content">
+              <div class="exp-header">
+                <h3>Breizelec - SI</h3>
+                <span class="badge">STAGE</span>
+              </div>
+              <p class="company">2026 - Breizelec - Châteaulin</p>
+              <ul class="desc-list">
+                <li>Mise en place d'un serveur WDS avec MDT</li>
+                <li>Restauration de fichiers via VEEAM Backup</li>
+                <li>Dimensionnement des besoins en infrastructure réseau</li>
+              </ul>
+            </div>
+          </div>
           <div class="exp-item reveal delay-1">
             <div class="exp-logo-container">
               <img src="images/grandma.png" alt="grand MA 3" class="exp-img" width="100" height="100" loading="lazy">
@@ -176,7 +283,7 @@
                 <h3>Ecole de Gendarmerie - DSOLC</h3>
                 <span class="badge">Stage</span>
               </div>
-              <p class="company">2025 - Ecole de Gendarmerie - Chateaulin</p>
+              <p class="company">2025 - Ecole de Gendarmerie - Châteaulin</p>
               <ul class="desc-list">
                 <li>Assistance Utilisateurs</li>
                 <li>Déploiement d'ordinateurs portables</li>
@@ -192,7 +299,7 @@
                 <h3>Salaun Holidays - SI</h3>
                 <span class="badge">Stage</span>
               </div>
-              <p class="company">2024 - Salaun Holidays - Chateaulin</p>
+              <p class="company">2024 - Salaun Holidays - Châteaulin</p>
               <ul class="desc-list">
                 <li>Déploiements de postes & iMac</li>
                 <li>Configuration d'un commutateur</li>
@@ -288,13 +395,6 @@
               <div>
                 <strong>Email</strong>
                 <span>gurvan.q27@gmail.com</span>
-              </div>
-            </div>
-            <div class="contact-info-item">
-              <div class="contact-info-icon"><i class="fas fa-phone"></i></div>
-              <div>
-                <strong>Téléphone</strong>
-                <span>+33 6 18 97 99 50</span>
               </div>
             </div>
             <div class="contact-info-item">
