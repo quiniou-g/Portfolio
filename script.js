@@ -8,6 +8,7 @@ const sectionMap = {
   'hero':           'hero',
   'parcours':       'hero',
   'competences':    'competences',
+  'projets':        'projets',
   'experience':     'experience',
   'certifications': 'certifications',
   'contact':        'certifications',
@@ -71,32 +72,4 @@ const observer = new IntersectionObserver(
   { threshold: 0.12 }
 );
 
-revealEls.forEach(el => observer.observe(el));
-
-/* ===========================
-   CONTACT FORM
-=========================== */
-const sendBtn = document.querySelector('.btn-full');
-if (sendBtn) {
-  sendBtn.addEventListener('click', () => {
-    const inputs = document.querySelectorAll('.form-group input, .form-group textarea');
-    let valid = true;
-    inputs.forEach(input => {
-      if (!input.value.trim()) {
-        input.style.borderColor = '#ef4444';
-        valid = false;
-      } else {
-        input.style.borderColor = '';
-      }
-    });
-    if (valid) {
-      sendBtn.textContent = '✓ Message envoyé !';
-      sendBtn.style.background = '#16a34a';
-      setTimeout(() => {
-        sendBtn.innerHTML = '<i class="fas fa-envelope"></i> Envoyer le message';
-        sendBtn.style.background = '';
-        inputs.forEach(input => input.value = '');
-      }, 3000);
-    }
-  });
-}
+revealEls.forEach(el => observer.observe(el));  
